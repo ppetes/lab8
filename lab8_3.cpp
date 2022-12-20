@@ -1,19 +1,21 @@
-#include<iostream>
-using namespace std;
+//ไม่ต้องเติม function main()
 
 char before(char x){
-	//Write your function definition here
+
+if(x == 'A')
+{
+return 'Z';
+}
+if(x == '0')
+{
+return '0';
+}
+if(x == toupper(x)){
+char ans = x-1;
+return ans;
 }
 
-int main(){
-	//Test Case
-	cout << before('A') << "\n";
-	cout << before('B') << "\n";
-	cout << before('P') << "\n";
-	cout << before('T') << "\n";
-	cout << before('Z') << "\n";
-	cout << before('a') << "\n";
-	cout << before('0') << "\n";
-	cout << before('c') << "\n";
-	return 0;
+else{
+return '0';}
+
 }
